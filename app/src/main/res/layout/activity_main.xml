@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/colorSurface">
+
+    <!-- Top bar with Settings Icon -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginBottom="16dp">
+
+        <!-- Settings Icon Button -->
+        <ImageButton
+            android:id="@+id/settingsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_settings"
+            android:contentDescription="@string/settings_description"
+            android:padding="10dp"
+            app:tint="@color/colorPrimary" />
+    </LinearLayout>
+
+    <!-- Curved Card for ProgressBar, Status Image, and Status Text -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="12dp"
+        android:layout_marginBottom="24dp"
+        app:cardBackgroundColor="@color/colorSurface">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="24dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- ProgressBar initially hidden -->
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:indeterminateTint="@color/colorSecondary"
+                android:visibility="gone" />
+
+            <!-- Status ImageView for check mark or X -->
+            <ImageView
+                android:id="@+id/statusImageView"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:visibility="gone"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/status_image_description" />
+
+            <TextView
+                android:id="@+id/statusTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="24dp"
+                android:text="@string/tap_start_scan"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:gravity="center" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Log output -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp"
+        app:backgroundTint="@color/colorSurface">
+
+        <TextView
+            android:id="@+id/logTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/network_interface_detected"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:lineSpacingExtra="6dp"
+            android:fontFamily="monospace"/>
+    </ScrollView>
+
+    <!-- Start Scan Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/refreshButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/start_scan"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        app:cornerRadius="24dp"
+        app:strokeColor="@color/colorPrimary"
+        app:strokeWidth="2dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="16dp" />
+
+
+    <!-- Launch Tab Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/openTabButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/launch_tab"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        app:cornerRadius="24dp"
+        app:strokeColor="@color/colorPrimary"
+        app:strokeWidth="2dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Stop Scan Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/stopButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/stop_scan"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        app:cornerRadius="24dp"
+        app:strokeColor="@color/colorAccent"
+        app:strokeWidth="2dp"
+        android:textColor="@color/colorAccent"
+        android:layout_marginBottom="24dp" />
+
+</LinearLayout>

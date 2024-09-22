@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary colors -->
+    <color name="colorPrimary">#0e7845</color>
+    <color name="colorPrimaryVariant">#0a5a32</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+
+    <!-- Secondary colors -->
+    <color name="colorSecondary">#da7026</color>
+    <color name="colorSecondaryVariant">#bf5d1e</color>
+    <color name="colorOnSecondary">#FFFFFF</color>
+
+    <!-- Background colors -->
+    <color name="colorBackground">#151414</color>
+    <color name="colorSurface">#292121</color>
+    <color name="colorOnSurface">#FFFFFF</color>
+
+    <!-- Status bar color -->
+    <color name="colorPrimaryDark">#292121</color>
+
+    <!-- Accent color -->
+    <color name="colorAccent">#cf1d05</color>
+
+    <!-- Common colors -->
+    <color name="white">#FFFFFF</color>
+</resources>

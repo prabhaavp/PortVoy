@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/settingsFrameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@color/colorBackground">
+
+
+    <!-- Curved Card for Settings Dialog -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="12dp"
+        app:cardBackgroundColor="@color/colorSurface">
+
+        <ScrollView
+            android:id="@+id/scrollViewSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:id="@+id/settingsLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp"
+                android:background="@color/colorSurface">
+
+                <TextView
+                    android:id="@+id/guidanceTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/guidance_text"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorOnSurface"
+                    android:layout_marginBottom="16dp" />
+
+                <EditText
+                    android:id="@+id/deviceNameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/device_name"
+                    android:inputType="text"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorOnSurface"
+                    android:backgroundTint="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/portEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/port"
+                    android:inputType="number"
+                    android:textSize="18sp"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@color/colorOnSurface"
+                    android:backgroundTint="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/timeoutEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/timeout_ms"
+                    android:inputType="number"
+                    android:textSize="18sp"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@color/colorOnSurface"
+                    android:backgroundTint="@color/colorPrimary" />
+
+            </LinearLayout>
+        </ScrollView>
+    </com.google.android.material.card.MaterialCardView>
+
+</FrameLayout>
