@@ -1,0 +1,1 @@
+Privacy Policy: We do not collect, store, or send any data. Everything stays on your device. No ads, no tracking, no data collection. All files are on GitHub for you to see. If you have any concerns, feel free to contact me.
