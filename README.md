@@ -1,4 +1,7 @@
-![1](https://github.com/user-attachments/assets/685d3fea-d2eb-4dde-b2a9-b0b1a3c3d493)
+<div style="display: flex; justify-content: space-between;">
+  <img src="https://github.com/user-attachments/assets/685d3fea-d2eb-4dde-b2a9-b0b1a3c3d493" alt="1" style="height: 300px; width: auto; margin-right: 10px;" />
+  <img src="https://github.com/user-attachments/assets/5dad4db7-7bc2-425e-9dea-9841c6e0aa90" alt="Screenshot" style="height: 300px; width: auto;" />
+</div>
 PortVoy makes network scanning easy. It checks your network interface, then scans the port you decide to connect. With a simple interface and no data collection, you can scan, find, and connect all with this app. It also features a “Setting” where you can save servers frequently connected to.
 
 
