@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">VoyageManager</string>
+    <string name="app_name">PortVoy</string>
     <string name="tap_start_scan">Tap \'Start Scan\' to connect to %1$s</string>
     <string name="refreshing">Refreshing...</string>
     <string name="found_ip">IP found: %1$s</string>

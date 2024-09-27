@@ -1,4 +1,4 @@
-package com.example.portvoy;
+package com.prabhaav.portvoy;
 
 import android.content.SharedPreferences;
 import android.net.Uri;

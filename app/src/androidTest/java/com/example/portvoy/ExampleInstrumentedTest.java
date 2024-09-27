@@ -1,4 +1,4 @@
-package com.example.portvoy;
+package com.prabhaav.portvoy;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.example.portvoy", appContext.getPackageName());
+        assertEquals("com.prabhaav.portvoy", appContext.getPackageName());
     }
 }

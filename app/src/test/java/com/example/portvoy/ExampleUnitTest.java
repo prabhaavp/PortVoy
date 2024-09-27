@@ -1,4 +1,4 @@
-package com.example.portvoy;
+package com.prabhaav.portvoy;
 
 import org.junit.Test;
 

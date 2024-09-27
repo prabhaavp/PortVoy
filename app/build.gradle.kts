@@ -3,15 +3,15 @@ plugins {
 }
 
 android {
-    namespace = "com.example.portvoy"
+    namespace = "com.prabhaav.portvoy"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.portvoy"
+        applicationId = "com.prabhaav.portvoy"
         minSdk = 25
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 2
+        versionName = "1.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
